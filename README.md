@@ -1,6 +1,5 @@
 - valuenet-admin前端基于vue-admin-template模板、后端基于SpringBoot开发、前后端分离
 - 有部分细节还未完善
-
 - 账号密码（admin\123）
 
 
