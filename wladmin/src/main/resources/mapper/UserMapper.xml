@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.valuenet.wladmin.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cc.valuenet.wladmin.model.User">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="login" property="login" />
+        <result column="display" property="display" />
+        <result column="phone" property="phone" />
+    </resultMap>
+
+
+    <sql id="UserId">
+        <set>
+            <if test="id != null and id != ''">id = #{id},</if>
+            <if test="name != null and name != ''">tag = #{name},</if>
+            <if test="password != null and password != ''">`type` = #{password},</if>
+            <if test="phone != null and phone != ''">title = #{phone},</if>
+            <if test="login != null and login != ''">title = #{login},</if>
+            <if test="display != null ">library = #{display},</if>
+        </set>
+    </sql>
+
+    <select id="findByLikeName" resultType="cc.valuenet.wladmin.model.User" parameterType="java.lang.String">
+        select * from user where name like "%"#{name}"%"
+    </select>
+
+    <select id="selectLogin" resultType="cc.valuenet.wladmin.vo.UserVo">
+        SELECT
+            login,count(*) num
+        FROM
+            user
+        GROUP BY
+            login
+    </select>
+
+</mapper>
