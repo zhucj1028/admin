@@ -31,7 +31,7 @@ public class JwtUtils {
         JwtBuilder builder = Jwts.builder()
                 .setId(id)
                 .setSubject(subject)   // 主题
-                .setIssuer("Java1234")     // 签发者
+                .setIssuer("admin")     // 签发者
                 .setIssuedAt(now)      // 签发时间
                 .signWith(signatureAlgorithm, secretKey); // 签名算法以及密匙
         if (ttlMillis >= 0) {
