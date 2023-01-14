@@ -34,10 +34,10 @@ public class ConstantUtils {
 
     //定义公开静态常量
     public static final String END_POIND = "oss-cn-chengdu.aliyuncs.com";
-    public static final String ACCESS_KEY_ID = "LTAI5tL3kJhvhgxPBJWh1KSo";
-    public static final String ACCESS_KEY_SECRET = "EjGMispHYoZ6IkUFGUDzxb0jTbiBsn";
-    public static final String BUCKET_NAME = "bk-admin";
+    public static final String ACCESS_KEY_ID = "";
+    public static final String ACCESS_KEY_SECRET = "";
+    public static final String BUCKET_NAME = "";
     public static final String SIGN_NAME = "总要抱点妄想";
-    public static final String TEMPLATE_CODE = "SMS_234398943";
+    public static final String TEMPLATE_CODE = "";
 
 }
