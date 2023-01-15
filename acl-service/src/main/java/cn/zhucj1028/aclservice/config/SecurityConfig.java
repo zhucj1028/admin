@@ -65,6 +65,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/password",
             "/image/**",
             "/test/demo",
+            "/bk/info/**",
             "/msm/**"
     };
 

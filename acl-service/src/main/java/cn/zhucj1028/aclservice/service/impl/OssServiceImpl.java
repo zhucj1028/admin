@@ -11,6 +11,12 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 import java.util.UUID;
 
+/**
+ * @description: OSS实现类
+ * @author zhucj
+ * @date 2023/1/14 20:24
+ * @version 1.0
+ */
 @Service
 public class OssServiceImpl implements OssService {
 

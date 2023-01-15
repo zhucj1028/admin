@@ -66,22 +66,19 @@ public class User implements Serializable {
     /**
      * 最后登录时间
      */
-    @JsonSerialize(using=CustomDateTimeSerializer.class)
-    @TableField(value = "login_date")
     @JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss")
+    @TableField(value = "login_date")
     private Date loginDate;
 
     /**
      * 创建日期
      */
-    @JsonSerialize(using=CustomDateTimeSerializer.class)
     @JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 
     /**
      * 更新日期
      */
-    @JsonSerialize(using=CustomDateTimeSerializer.class)
     @JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 

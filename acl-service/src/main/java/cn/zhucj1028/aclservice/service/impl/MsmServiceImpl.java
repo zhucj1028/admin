@@ -14,6 +14,12 @@ import org.springframework.util.StringUtils;
 
 import java.util.Map;
 
+/**
+ * @description: 短信实现类
+ * @author zhucj
+ * @date 2023/1/14 20:24
+ * @version 1.0
+ */
 @Service
 public class MsmServiceImpl implements MsmService {
     /**发送短信的方法

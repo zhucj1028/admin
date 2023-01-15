@@ -50,9 +50,6 @@ public class UserController {
     @Autowired
     private RedisUtils redisUtil;
 
-    @Value("${avatarImagesFilePath}")
-    private String avatarImagesFilePath;
-
     /**
      * 用户信息
      *
